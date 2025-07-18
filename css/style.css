@@ -20,7 +20,6 @@
 
 #introText {
     text-align: center;
-    text-shadow: 1px 1px 1px gray;
 }
 
 .btn {
@@ -37,4 +36,8 @@
 .btnContainer {
     display: flex;
     justify-content: center;
+}
+
+p {
+    text-shadow: 1px 1px 1px gray;
 }
