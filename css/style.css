@@ -6,6 +6,11 @@
     -ms-user-select: none;
 }
 
+@font-face {
+    font-family: 'Old London';
+    src: url("../fonts/OldLondon.ttf");
+}
+
 #mainLogo {
     display: block;
     margin-left: auto;
@@ -23,21 +28,28 @@
 }
 
 .btn {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     margin: 10px;
     text-shadow: 1px 1px 2px gray;
     cursor: pointer;
+    min-width: 100px;
+    max-width: 100%;
 }
 
 .btnContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 p {
     text-shadow: 1px 1px 1px gray;
+}
+
+#petPantheonIntro {
+    font-family: 'Old London';
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 5px 5px 1px rgba(184, 173, 22, 0.774);
 }
