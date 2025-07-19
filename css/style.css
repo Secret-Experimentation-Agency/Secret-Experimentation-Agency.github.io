@@ -39,8 +39,30 @@
     transition: 0.3s;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .btn:hover {
-    background-color: rgba(134, 208, 253, 0.276);
+    background-color: rgba(50, 129, 179, 0.879);
     transform: scale(1.05);
 }
 
@@ -71,6 +93,12 @@ p {
 
 #staffBody {
     background-image: url("../img/staffbackground.png");
+    background-size: 1280px 720px;
+    background-repeat: no-repeat;
+}
+
+#activitiesBody {
+    background-image: url("../img/activitiesbackground.png");
     background-size: 1280px 720px;
     background-repeat: no-repeat;
 }
