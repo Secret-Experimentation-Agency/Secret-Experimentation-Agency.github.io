@@ -17,6 +17,11 @@
     margin-right: auto;
     margin-top: 50px;
     width: 25%;
+    transition: 0.2s;
+}
+
+#mainLogo:active {
+    transform: scale(1.05);
 }
 
 .lucidaSans {
