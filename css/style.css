@@ -35,6 +35,13 @@
     cursor: pointer;
     min-width: 100px;
     max-width: 100%;
+    background-color: rgb(95, 194, 255);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(134, 208, 253, 0.276);
+    transform: scale(1.05);
 }
 
 .btnContainer {
@@ -42,6 +49,8 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
 
 p {
     text-shadow: 1px 1px 1px gray;
@@ -52,4 +61,10 @@ p {
     font-size: 100px;
     text-align: center;
     text-shadow: 5px 5px 1px rgba(184, 173, 22, 0.774);
+}
+
+body {
+    background-image: url("../img/indexbackground.png");
+    background-size: 1280px 720px;
+    background-repeat: no-repeat;
 }
