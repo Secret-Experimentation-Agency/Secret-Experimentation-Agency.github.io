@@ -63,8 +63,14 @@ p {
     text-shadow: 5px 5px 1px rgba(184, 173, 22, 0.774);
 }
 
-body {
+#indexBody {
     background-image: url("../img/indexbackground.png");
+    background-size: 1280px 720px;
+    background-repeat: no-repeat;
+}
+
+#staffBody {
+    background-image: url("../img/staffbackground.png");
     background-size: 1280px 720px;
     background-repeat: no-repeat;
 }
