@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
             let voiceProgress = 0;
-            let riddleProgress = 0;
 
 
             function sleep(ms) {
@@ -39,32 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         break;
                     case 5:
                         voiceText("just don't get lost in the sea")
-                        document.getElementById("voiceBtn").style.display = "none";
-                        document.getElementById("textRiddle").style.display = "block";
-                        document.getElementById("textRiddleSubmit").style.display = "block";
                         break;
-                    
                 }
                 voiceProgress += 1;
             }
 
-            function checkRiddle(riddleGuess){
-                switch(riddleGuess){
-                    case "sun":
-                        voiceText("yay");
-                        break;
-
-                }
-            }
-
-            function getRiddleInput(){
-                let riddleGuess = document.getElementById("textRiddle").value;
-                console.log(riddleGuess);
-                checkRiddle(riddleGuess);
-            }
-
             document.getElementById("voiceBtn").onclick = progressVoice;
-            document.getElementById("textRiddleSubmit").onclick = getRiddleInput;
 
             }
         );
